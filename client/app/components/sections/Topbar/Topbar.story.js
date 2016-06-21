@@ -30,6 +30,7 @@ const baseProps = {
     location_placeholder: 'Location',
     onSubmit: action('submitting search'),
   },
+  search_path: '#',
   menu: {
     links: [
       {
@@ -115,6 +116,7 @@ storiesOf('Top bar')
       logo: baseProps.logo,
       marketplaceContext: baseProps.marketplaceContext,
       routes: baseProps.routes,
+      search_path: baseProps.search_path,
     })))
   .add('Logged out', () => (
     storifyTopbar(loggedOut(baseProps))))
