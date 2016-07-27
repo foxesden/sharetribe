@@ -74,6 +74,13 @@ def ask_confirmations!(destination, branch, params)
     exit if response != 'y' && response != 'Y'
   end
 
+  if local_css_modifications?
+    puts ""
+    puts "You are deploying CSS changes. Did you remember to run 'sharetribe:cs_extract' task? (y/n)"
+    response = STDIN.gets.strip
+    exit if response != 'y' && response != 'Y'
+  end
+
   if params[:migrations] == false
     puts ""
     puts "Skipping migrations, really? (y/n)"
