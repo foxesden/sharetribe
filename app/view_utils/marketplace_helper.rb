@@ -14,8 +14,8 @@ module MarketplaceHelper
       color1: color1,
       color2: color2,
       image_map: {
-        cover_photo:         community.cover_photo.url(:hd_header) || "cover_photos/header/default.jpg",
-        small_cover_photo:   community.small_cover_photo.url(:hd_header) || "cover_photos/header/default.jpg",
+        cover_photo:         community.cover_photo.url(:hd_header),
+        small_cover_photo:   community.small_cover_photo.url(:hd_header),
         wide_logo_lowres:    community.wide_logo.url(:header),
         wide_logo_highres:   community.wide_logo.url(:header_highres),
         square_logo_lowres:  community.logo.url(:header_icon),
