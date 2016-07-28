@@ -2137,6 +2137,7 @@ en:
       menu: Menu
       more: More
       search_placeholder: Search...
+      search_location_placeholder: Location
       user: User
       inbox: Inbox
       profile: Profile
