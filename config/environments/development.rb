@@ -8,7 +8,8 @@ Kassi::Application.configure do
   # In the development environment your application's code is reloaded on
   # every request.  This slows down response time but is perfect for development
   # since you don't have to restart the webserver when you make code changes.
-  config.cache_classes = false
+  config.cache_classes = true
+  config.assets.compile = false
 
   # To autoload MailPreview, uncomment this line
   # (this is a hack which is fixed properly in Rails 4)
@@ -46,8 +47,8 @@ Kassi::Application.configure do
 
 
   # Show full error reports and disable caching
-  config.consider_all_requests_local       = true
-  config.action_controller.perform_caching = false
+  config.consider_all_requests_local       = false
+  config.action_controller.perform_caching = true
 
   config.action_controller.action_on_unpermitted_parameters = :raise
 
